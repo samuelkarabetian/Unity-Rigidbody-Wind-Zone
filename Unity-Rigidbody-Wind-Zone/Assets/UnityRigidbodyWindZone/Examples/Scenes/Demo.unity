@@ -150,15 +150,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f913e2be5fa34584cb65c1b33fa021ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _masterWindStrength: 0.5
+  _masterWindStrength: 0.1
   _winds:
-  - _strength: 22.5
-    _turbulence: 1.26
+  - _strength: 20
+    _turbulence: 0.39
     _direction: {x: 0, y: 0, z: 1}
-  - _strength: 9.4
+    _windDirectionRandomization: 0.5
+    _directionChangeSpeed: 1
+  - _strength: 1
     _turbulence: 9.2
     _direction: {x: 0, y: 0, z: 1}
-  _zoneRadius: 20
+    _windDirectionRandomization: 0.5
+    _directionChangeSpeed: 1
+  _zoneRadius: 1000
   _layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -204,7 +208,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590149782}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 95beee3ca33de9b44ac215ea9fbba43a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -314,7 +318,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691910134}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 95beee3ca33de9b44ac215ea9fbba43a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -515,7 +519,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953180806}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 95beee3ca33de9b44ac215ea9fbba43a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -693,7 +697,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040808034}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 95beee3ca33de9b44ac215ea9fbba43a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
